@@ -133,8 +133,9 @@ class LoginForm1 extends React.Component {
             messageToken = null;
             that.state.messageToken = null;
             that.state.streamToken = null;
-            that.props.thirdcall()
-            console.log("Disconnect reached")
+            that.props.thirdcall();
+            messages = [];
+            console.log("Disconnect reached");
             that.setState({display: true});
             that.setState({url: ""});
             that.setState({username: ""});
